@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function HelloWorld() {
+export default function HelloWorld({ title, desc, ...style }) {
 	return (
-		<div style={{ textAlign: "center", color: "blue", fontWeight: 800 }}>
-			<h1>Hello, World!</h1>
-			<p>This is my first React Application.</p>
+		<div style={style}>
+			<h1>{title}</h1>
+			<p>{desc}</p>
 		</div>
 	);
 }

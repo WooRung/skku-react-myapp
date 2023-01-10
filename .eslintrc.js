@@ -6,12 +6,13 @@ module.exports = {
 		jest: true,
 	},
 	extends: [
-		"react-app",
-		"react-app/jest",
-		"eslint:recommended",
 		"plugin:react/recommended",
-		"prettier",
+
+		"airbnb",
+		"react-app/jest",
 		"plugin:prettier/recommended",
+		"prettier",
+		// "ddfdfds",
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -22,20 +23,17 @@ module.exports = {
 	plugins: ["react", "prettier"],
 	rules: {
 		"react/jsx-filename-extension": [1, { extensions: ["js", "jsx"] }],
-		"prettier/prettier": "warn",
 		"no-param-reassign": 0,
 		"arrow-parens": 0,
-		"max-len": [
-			"error",
-			{
-				code: 120,
-			},
-		],
+		"react/prop-types": 0,
 		"comma-dangle": 0,
 		"object-curly-newline": 0,
 		"no-unused-vars": "warn",
-		"react-hooks/exhaustive-deps": ["warn"],
 		"react/jsx-props-no-spreading": [1, { custom: "ignore" }],
 		"react/react-in-jsx-scope": 0,
+		"import/prefer-default-export": 0,
+		"react-hooks/exhaustive-deps": 0,
+		"react/destructuring-assignment": 0,
+		"react/no-access-state-in-setstate": 0,
 	},
 };
