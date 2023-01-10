@@ -3,6 +3,8 @@ import "./App.css";
 import CaptionImage from "./components/CaptionImage";
 import HelloWorld from "./components/HelloWorld";
 import Blink from "./components/Blink";
+import Clink from "./components/Clink";
+import AddressBook from "./components/AddressBook";
 
 function App() {
 	const objHello = {
@@ -16,8 +18,10 @@ function App() {
 	// title, desc, color, fontWeight, textAlign
 	return (
 		<div className="App">
-			<Blink text="이건 깜빡입니다." />
-			<HelloWorld title={title} desc={desc} {...style} />
+			<AddressBook />
+			{/* <Blink text="이건 깜빡입니다." /> */}
+			{/* <Clink /> */}
+			{/* <HelloWorld title={title} desc={desc} {...style} />
 			<CaptionImage
 				imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSEyPCHfLQrB1O44wJTRVLmYxFwk9qIJ_usVheNv4&s"
 				caption="이건 트럭입니다."
@@ -25,7 +29,7 @@ function App() {
 			<CaptionImage
 				imgUrl="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fthumb2.gettyimageskorea.com%2Fimage_preview%2F700%2F202208%2FFPL%2F1413623693.jpg&type=sc960_832"
 				caption="꽃사진"
-			/>
+			/> */}
 		</div>
 	);
 }

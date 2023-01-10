@@ -13,14 +13,9 @@ export default class Blink extends React.Component {
 	}
 
 	render() {
-		let displayText = "";
-		if (this.state.showText) {
-			displayText = this.props.text;
-		}
-
 		return (
 			<div>
-				<h1>{displayText}</h1>
+				<h1>{this.state.showText ? this.props.text : ""}</h1>
 			</div>
 		);
 	}
