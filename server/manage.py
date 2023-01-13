@@ -17,6 +17,8 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+import dotenv
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    dotenv.read_dotenv()
     main()
